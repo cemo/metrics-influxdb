@@ -87,7 +87,7 @@ public class MeasurementReporter extends SkipIdleReporter {
                 .addValue("one-minute", convertRate(t.getOneMinuteRate()))
                 .addValue("five-minute", convertRate(t.getFiveMinuteRate()))
                 .addValue("fifteen-minute", convertRate(t.getFifteenMinuteRate()))
-                .addValue("mean-minute", convertRate(t.getMeanRate()))
+                .addValue("mean-rate", convertRate(t.getMeanRate()))
                 .addValue("run-count", t.getCount());
         
         return measure;
@@ -104,7 +104,7 @@ public class MeasurementReporter extends SkipIdleReporter {
                 .addValue("one-minute", convertRate(mt.getOneMinuteRate()))
                 .addValue("five-minute", convertRate(mt.getFiveMinuteRate()))
                 .addValue("fifteen-minute", convertRate(mt.getFifteenMinuteRate()))
-                .addValue("mean-minute", convertRate(mt.getMeanRate()));
+                .addValue("mean-rate", convertRate(mt.getMeanRate()));
         return measure;
     }
 

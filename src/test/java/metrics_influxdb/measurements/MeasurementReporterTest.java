@@ -92,7 +92,7 @@ public class MeasurementReporterTest {
         assertThat(sender.getFrames().get(0), containsString("one-minute="));
         assertThat(sender.getFrames().get(0), containsString("five-minute="));
         assertThat(sender.getFrames().get(0), containsString("fifteen-minute="));
-        assertThat(sender.getFrames().get(0), containsString("mean-minute="));
+        assertThat(sender.getFrames().get(0), containsString("mean-rate="));
     }
     
     @Test
@@ -145,7 +145,7 @@ public class MeasurementReporterTest {
         assertThat(sender.getFrames().get(0), containsString("one-minute="));
         assertThat(sender.getFrames().get(0), containsString("five-minute="));
         assertThat(sender.getFrames().get(0), containsString("fifteen-minute="));
-        assertThat(sender.getFrames().get(0), containsString("mean-minute="));
+        assertThat(sender.getFrames().get(0), containsString("mean-rate="));
         assertThat(sender.getFrames().get(0), containsString("min="));
         assertThat(sender.getFrames().get(0), containsString("max="));
         assertThat(sender.getFrames().get(0), containsString("mean="));

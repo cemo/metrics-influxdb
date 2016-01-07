@@ -10,7 +10,7 @@
 	<groupId>com.aslanoba</groupId>
 	<artifactId>metrics-influxdb</artifactId>
 	<packaging>bundle</packaging>
-	<version>0.8.0</version>
+	<version>0.8.1</version>
 	<name>${project.artifactId}</name>
 	<description>A reporter for metrics which announces measurements to an InfluxDB server.</description>
 	<url>https://github.com/davidB/metrics-influxdb</url>

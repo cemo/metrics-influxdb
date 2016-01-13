@@ -79,14 +79,14 @@ public class MeasurementReporter extends SkipIdleReporter {
                 .addValue("max", convertDuration(snapshot.getMax()))
                 .addValue("mean", convertDuration(snapshot.getMean()))
                 .addValue("std-dev", convertDuration(snapshot.getStdDev()))
-                .addValue("50-percentile", convertDuration(snapshot.getMedian()))
+                //.addValue("50-percentile", convertDuration(snapshot.getMedian()))
                 .addValue("75-percentile", convertDuration(snapshot.get75thPercentile()))
-                .addValue("95-percentile", convertDuration(snapshot.get95thPercentile()))
+                //.addValue("95-percentile", convertDuration(snapshot.get95thPercentile()))
                 .addValue("99-percentile", convertDuration(snapshot.get99thPercentile()))
-                .addValue("999-percentile", convertDuration(snapshot.get999thPercentile()))
+                //.addValue("999-percentile", convertDuration(snapshot.get999thPercentile()))
                 .addValue("one-minute", convertRate(t.getOneMinuteRate()))
                 .addValue("five-minute", convertRate(t.getFiveMinuteRate()))
-                .addValue("fifteen-minute", convertRate(t.getFifteenMinuteRate()))
+                //.addValue("fifteen-minute", convertRate(t.getFifteenMinuteRate()))
                 .addValue("mean-rate", convertRate(t.getMeanRate()))
                 .addValue("run-count", t.getCount());
         
@@ -103,7 +103,7 @@ public class MeasurementReporter extends SkipIdleReporter {
                 .addValue("count", mt.getCount())
                 .addValue("one-minute", convertRate(mt.getOneMinuteRate()))
                 .addValue("five-minute", convertRate(mt.getFiveMinuteRate()))
-                .addValue("fifteen-minute", convertRate(mt.getFifteenMinuteRate()))
+                //.addValue("fifteen-minute", convertRate(mt.getFifteenMinuteRate()))
                 .addValue("mean-rate", convertRate(mt.getMeanRate()));
         return measure;
     }
@@ -122,11 +122,11 @@ public class MeasurementReporter extends SkipIdleReporter {
                 .addValue("max", snapshot.getMax())
                 .addValue("mean", snapshot.getMean())
                 .addValue("std-dev", snapshot.getStdDev())
-                .addValue("50-percentile", snapshot.getMedian())
+                //.addValue("50-percentile", snapshot.getMedian())
                 .addValue("75-percentile", snapshot.get75thPercentile())
-                .addValue("95-percentile", snapshot.get95thPercentile())
+                //.addValue("95-percentile", snapshot.get95thPercentile())
                 .addValue("99-percentile", snapshot.get99thPercentile())
-                .addValue("999-percentile", snapshot.get999thPercentile())
+                //.addValue("999-percentile", snapshot.get999thPercentile())
                 .addValue("run-count", h.getCount());
         return measure;
     }
